@@ -1,0 +1,35 @@
+.center-content{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 10px;
+}
+span{
+    margin-inline: 65px;
+}
+.card:hover {
+    background-color: lightgray;
+  }
+h5{
+    margin-top: 20px;
+}
+.card{
+    border-radius: 20px;
+    margin: 20px;
+    padding: 23px;
+}
+.card .btn-primary{
+    border-radius: 200px;
+    font-size: 12px;
+}
+.card-text{
+    text-decoration: underline;
+}
+@media (max-width: 770px) {
+    .col-sm-4 {
+      width: 100%;
+      padding: 10px;
+    }
+  }

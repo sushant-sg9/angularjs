@@ -1,0 +1,409 @@
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  width: 100%;
+  height: 70%;
+  background-image: url("../../assets/images/bg_header.png");
+  background-size: cover;
+  background-position: 5px -180px;
+  
+}
+
+.row {
+  display: flex;
+}
+
+.header .big-text {
+  font-size: 70px;
+  letter-spacing: -2px;
+}
+
+.Heading {
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.header .big-text span {
+  font-weight: bold;
+  color: #007ee5;
+  position: relative;
+  text-decoration: none;
+}
+
+.header .big-text span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 168px;
+  height: 2.5px;
+  background-color: #007ee5;
+}
+
+.header .small-text {
+  margin-top: 73px;
+  font-size: 15px;
+}
+
+.header .buttons {
+  margin-top: 50px;
+}
+
+.buttons {
+  display: flex;
+}
+
+.buttons p {
+  font-size: 13px;
+  font-weight: bold;
+  color: #007ee5;
+  margin: 13px 13px;
+}
+.play-button{
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  background-color: #ECEEFE;
+  margin: 8px 10px;
+
+}
+.play-button .playButton-image{
+  margin: 2px 6px;
+}
+.header .trusted-text {
+  font-weight: 650;
+  margin-top: 40px;
+  font-size: 19px;
+  display: inline-block;
+  word-spacing: 0px;
+}
+
+.trusted {
+  display: flex;
+}
+
+.trusted-logo {
+  height: 52px;
+  width: 169px;
+  border: none;
+  border-radius: 50px;
+  margin: 35px 10px;
+  background-color: #eceefe;
+  padding: 15px;
+}
+.trusted-logo .tesla-logo {
+  width: 25px;
+  height: 25px;
+  margin: 0 4px 5px 4.5px;
+}
+.trusted-logo .spotify-logo {
+  width: 25px;
+  height: 25px;
+  margin: 0 4px 5px 4.5px;
+}
+.trusted-logo .discord-logo {
+  width: 25px;
+  height: 25px;
+  margin: 0 4px 5px 4.5px;
+}
+.trusted-logo .telegram-logo {
+  width: 25px;
+  height: 25px;
+  margin: 0 4px 5px 4.5px;
+}
+
+.col-lg-6 img {
+  width: 70%;
+  height: 90%;
+  margin-left: 120px;
+}
+
+.btn-primary {
+  border-radius: 22px;
+  height: 47px;
+  width: 135px;
+  background-color: #007ee5;
+  font-size: 15px;
+}
+
+.ten {
+  color: #007ee5;
+}
+
+.image-container {
+  position: relative;
+}
+
+.card {
+  position: absolute;
+  background-color: #fff;
+  padding: 10px;
+}
+
+.card-1 {
+  top: 20px;
+  left: 115px;
+  height: 160px;
+  width: 120px;
+  background-color: white;
+  border-radius: 18px;
+  border-color: #007ee5;
+  padding: 10px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+  animation: animation_card-1 4s infinite ease;
+  opacity: 0;
+}
+
+@keyframes animation_card-1 {
+  50% {
+    opacity: 1;
+    transform: translate(-100%, -40%) translate3d(100%, 100%, 0);
+  }
+}
+
+.circle {
+  width: 65px;
+  height: 65px;
+  background-color: white;
+  border: 8px solid transparent;
+  border-radius: 50%;
+  margin-left: 16px;
+  background-image: linear-gradient(white, white),
+    linear-gradient(84.5deg, #eaecf0 56%, #007ee5 44%);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+.card-1 p {
+  font-size: 14px;
+  margin: 0px;
+  font-weight: 500;
+  color: lightgray;
+}
+
+.card-1 h4 {
+  padding: 10px 24px;
+  font-size: 25px;
+  font-weight: 700;
+  margin: 0px;
+}
+
+.card-2 {
+  bottom: 50px;
+  left: 20px;
+  background-color: white;
+  border-radius: 28px;
+  border-color: #007ee5;
+  padding: 10px 15px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+  height: 60px;
+  width: 250px;
+  animation: animation_card-2 4.1s infinite ease;
+  opacity: 0;
+}
+
+@keyframes animation_card-2 {
+  25% {
+    opacity: 1;
+    transform: translate(25%, 0%) translate3d(5%, 0, 0);
+  }
+}
+
+.card-2 p {
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  font-weight: 450;
+}
+
+.card-2 p span {
+  color: #007ee5;
+  font-weight: bold;
+}
+
+.card-3 {
+  top: 51%;
+  right: 45px;
+  height: 70px;
+  width: 130px;
+  background-color: white;
+  border-radius: 18px;
+  border-color: #007ee5;
+  padding: 10px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+  animation: animation_card-3 4s infinite ease;
+  opacity: 0;
+}
+
+@keyframes animation_card-3 {
+  75% {
+    opacity: 1;
+    transform: translate(0, 0) translate3d(0, 0, 0);
+  }
+}
+
+.card-3 p {
+  font-size: 14px;
+  margin: 0px;
+  font-weight: 500;
+  color: lightgray;
+}
+
+.card-3 h4 {
+  font-size: 25px;
+  font-weight: 700;
+  margin: 0px;
+  letter-spacing: -0.5px;
+}
+
+@media (max-width: 991px) {
+  .row {
+    background-position: center;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+    
+  
+  .card-1 {
+    top: 20px;
+    left: 0px;
+    height: 180px;
+    width: 120px;
+  }
+
+  .col-lg-6 {
+    order: -1;
+    margin: 0 10px 20px 20px;
+  }
+
+  .col-lg-6 img {
+    width: 90%;
+    height: auto !important;
+    margin-left: 0;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .header .big-text {
+    font-size: 50px;
+  }
+
+  .header .small-text {
+    margin-top: 40px;
+    font-size: 16px;
+  }
+
+  .header .big-text span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 120px;
+    height: 2.5px;
+    background-color: #007ee5;
+  }
+
+  .buttons p {
+    font-size: 12px;
+  }
+
+  .header .trusted-text {
+    font-size: 14px;
+    margin-top: 30px;
+  }
+  .play-button .playButton-image{
+    margin: 2px 4px;
+  }
+  .trusted-logo {
+    height: 40px;
+    width: 130px;
+    margin: 25px 10px;
+    padding: 7px;
+  }
+  .trusted-logo .tesla-logo {
+    width: 25px;
+    height: 25px;
+    margin: 0 0px 5px 4px;
+  }
+  .trusted-logo .spotify-logo {
+    width: 25px;
+    height: 25px;
+    margin: 0 0px 5px 4px;
+  }
+  .trusted-logo .discord-logo {
+    width: 25px;
+    height: 25px;
+    margin: 0 0px 5px 4px;
+  }
+  .trusted-logo .telegram-logo {
+    width: 25px;
+    height: 25px;
+    margin: 0 0px 5px 4px;
+  }
+
+
+  .card-1 {
+    top: 20px;
+    left: 0px;
+    height: 130px;
+    width: 90px;
+  }
+ 
+  .circle {
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border: 5px solid transparent;
+    border-radius: 50%;
+    margin-left: 5px;
+    background-image: linear-gradient(white, white),
+      linear-gradient(84.5deg, #eaecf0 56%, #007ee5 44%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+  }
+
+  .card-1 p {
+    font-size: 10px;
+    margin: 0;
+  }
+
+  .card-1 h4 {
+    padding: 8px 2px 0px 0px;
+    font-size: 15px;
+    margin: 0px 5px 0px 20px;
+  }
+
+  .card-2 {
+    bottom: 40px;
+    left: -20px;
+    height: 50px;
+    width: 180px;
+  }
+
+  .card-2 p {
+    font-size: 11px;
+  }
+
+  .card-2 p span {
+    font-weight: normal;
+  }
+
+  .card-3 {
+    top: 53%;
+    right: 17px;
+    height: 60px;
+    width: 110px;
+    padding: 8px;
+  }
+
+  .card-3 p {
+    font-size: 15px;
+  }
+
+  .card-3 h4 {
+    font-size: 20px;
+  }
+}
